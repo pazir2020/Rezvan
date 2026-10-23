@@ -1,0 +1,30 @@
+/* Rezvan operations centre — scoped, RTL, responsive. */
+#ho-root{direction:rtl;line-height:1.8;color:var(--text,#1b293b)}
+#ho-root .ho-head{margin-bottom:18px}
+#ho-root .ho-head h2{margin:0 0 6px;font-size:1.35rem}
+#ho-root .ho-note{font-size:.84rem;color:var(--text-muted,#657385);line-height:1.85}
+#ho-root .ho-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
+#ho-root .ho-tabs button{border:1px solid var(--border,#cbd5e1);background:transparent;border-radius:10px;padding:7px 12px;cursor:pointer;color:inherit}
+#ho-root .ho-tabs button.active{background:var(--accent,#1d4ed8);color:white;border-color:transparent}
+#ho-root .ho-panel{display:none}
+#ho-root .ho-panel.active{display:block}
+#ho-root .ho-card{background:var(--card,#fff);border:1px solid var(--border,#e2e8f0);border-radius:14px;padding:17px;margin:13px 0;box-shadow:0 2px 6px rgba(0,0,0,.025)}
+#ho-root .ho-card h3{font-size:1.04rem;margin:0 0 11px}
+#ho-root .ho-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+#ho-root label{display:flex;flex-direction:column;gap:5px;font-size:.88rem;font-weight:600}
+#ho-root input,#ho-root select,#ho-root textarea{width:100%;box-sizing:border-box;padding:9px;border:1px solid var(--border,#cbd5e1);border-radius:8px;color:var(--text,#1e293b);background:var(--card,#fff);font:inherit;min-width:0}
+#ho-root textarea{min-height:65px}
+#ho-root button.ho-action{padding:9px 14px;border-radius:9px;background:var(--accent,#1d4ed8);color:white;border:0;cursor:pointer;margin:6px 5px 6px 0;font:inherit}
+#ho-root button.ho-action.alt{background:#496577}
+#ho-root button.ho-action.danger{background:#a43f4b}
+#ho-root .ho-scroll{overflow:auto;max-width:100%}
+#ho-root table{width:100%;border-collapse:collapse;min-width:570px;font-size:.85rem}
+#ho-root th,#ho-root td{border-bottom:1px solid var(--border,#e2e8f0);padding:9px;text-align:right;vertical-align:top}
+#ho-root th{background:var(--surface,#f1f5f9)}
+#ho-root .ho-stat{background:var(--surface,#f1f5f9);padding:12px;border-radius:10px}
+#ho-root .ho-stat strong{display:block;font-size:1.1rem}
+#ho-root .ho-warn{border-inline-start:4px solid #b97827;padding:8px 12px;background:rgba(190,126,38,.08)}
+#ho-root .ho-error{color:#ae3948;white-space:pre-wrap}
+#ho-root .ho-ok{color:#17814a}
+#ho-root .ho-actions-inline{display:flex;gap:5px;flex-wrap:wrap}
+@media (max-width:640px){#ho-root .ho-card{padding:12px}#ho-root .ho-tabs button{font-size:.8rem}}

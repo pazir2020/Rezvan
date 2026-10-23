@@ -1,0 +1,6 @@
+{
+  "name": "سامانه منابع انسانی و عملیات تنورسازی رضوان | HRMS REZVAN",
+  "description": "سامانه یکپارچه ممیزی، بازطراحی، حقوق و دستمزد، کارانه تولید و عملیات تنورسازی رضوان",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

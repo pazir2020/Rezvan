@@ -1,0 +1,32 @@
+/* Additive HR completion controls: inherits the Rezvan shell palette. */
+#hc-root {direction:rtl;padding:18px;max-width:1280px;margin:auto}
+#hc-root h2{margin:0 0 9px;font-size:1.4rem}
+#hc-root h3{margin:0 0 12px;font-size:1.05rem}
+#hc-root p{line-height:1.9}
+#hc-root .hc-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0}
+#hc-root .hc-tabs button{border-radius:10px;padding:10px 13px;border:1px solid var(--border,#d8e0e8);background:var(--card,#fff);color:var(--text,#24344b);cursor:pointer}
+#hc-root .hc-tabs button.active{background:#1b478b;color:white}
+#hc-root .hc-panel{display:none}
+#hc-root .hc-panel.active{display:block}
+#hc-root .hc-card{padding:18px;margin:12px 0;background:var(--card,#fff);border:1px solid var(--border,#d5dce7);border-radius:14px}
+#hc-root .hc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+#hc-root label{display:flex;flex-direction:column;gap:5px;font-size:.9rem}
+#hc-root input:not([type=checkbox]),#hc-root textarea,#hc-root select{width:100%;border:1px solid #a7b8c9;border-radius:8px;padding:10px;font:inherit;background:#fff;color:#253245;direction:rtl}
+#hc-root input[type=checkbox]{accent-color:#2563eb;width:18px;height:18px}
+#hc-root textarea{min-height:75px;resize:vertical}
+#hc-root button.hc-action{padding:10px 14px;border:0;border-radius:9px;background:#2255a4;color:white;cursor:pointer;margin:8px 0 0 8px}
+#hc-root button.hc-muted{background:#e7eaf2;color:#1f355a}
+#hc-root .hc-help{font-size:.88rem;color:var(--muted,#67798b)}
+#hc-root .hc-warning{background:#fff5df;color:#725119;padding:10px;border-radius:9px;font-size:.88rem}
+#hc-root .hc-scroll{overflow-x:auto;width:100%}
+#hc-root table{width:100%;min-width:500px;border-collapse:collapse;font-size:.9rem}
+#hc-root th,#hc-root td{text-align:right;border-bottom:1px solid var(--border,#e6e9ef);padding:9px;white-space:normal}
+#hc-root th{background:var(--surface,#f1f5fa)}
+#hc-root .hc-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+#hc-root .hc-check{display:flex;align-items:center;gap:9px;padding:10px;background:var(--surface,#f5f8fb);border-radius:9px}
+#hc-root .hc-check input{flex:none}
+#hc-root .hc-check span{flex:1}
+#hc-root .hc-tag{padding:3px 9px;background:#eaf2fd;border-radius:100px;color:#174a89;font-size:.8rem}
+#hc-root .hc-status{margin:10px 0;color:#11644c;white-space:pre-wrap}
+#hc-root .hc-error{color:#b91c1c;white-space:pre-wrap}
+@media(max-width:650px){#hc-root{padding:10px}#hc-root .hc-card{padding:12px}#hc-root .hc-tabs button{flex:1 1 45%}}
